@@ -65,6 +65,16 @@ app.post("/quotes/:id/like", async (req, res) => {
   }
 });
 
+// Endpoint to reset likes for all quotes
+app.post("/reset-likes", async (req, res) => {
+  try {
+    await Quote.updateMany({}, { $set: { likes: 0, likedBy: [] } });
+    res.json({ success: true, message: "All likes reset" });
+  } catch (error) {
+    res.status(500).json({ message: "Error resetting likes" });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
