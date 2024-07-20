@@ -66,6 +66,33 @@ app.post("/quotes/:id/like", async (req, res) => {
   }
 });
 
+// Endpoint to unlike a quote
+app.post("/quotes/:id/unlike", async (req, res) => {
+  const { id } = req.params;
+  const { deviceId } = req.body;
+
+  try {
+    const quote = await Quote.findOne({ id: id });
+
+    if (!quote) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Quote not found" });
+    }
+
+    if (quote.likedBy.includes(deviceId)) {
+      quote.likes -= 1;
+      quote.likedBy = quote.likedBy.filter((id) => id !== deviceId);
+      await quote.save();
+      res.json({ success: true, likes: quote.likes });
+    } else {
+      res.json({ success: false, message: "Quote not liked by this device" });
+    }
+  } catch (error) {
+    res.status(500).json({ message: "Error unliking quote" });
+  }
+});
+
 // Endpoint to reset likes for all quotes
 app.post("/reset-likes", async (req, res) => {
   try {
