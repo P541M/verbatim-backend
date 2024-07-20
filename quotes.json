@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "text": "The only limit to our realization of tomorrow is our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "category": "generic"
+  },
+  {
+    "id": 2,
+    "text": "The purpose of our lives is to be happy.",
+    "author": "Dalai Lama",
+    "category": "generic"
+  },
+  {
+    "id": 3,
+    "text": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "author": "Ralph Waldo Emerson",
+    "category": "specific"
+  },
+  {
+    "id": 4,
+    "text": "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+    "author": "Martin Luther King Jr.",
+    "category": "specific"
+  }
+]
