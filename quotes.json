@@ -36,31 +36,31 @@
     "category": "family"
   },
   {
-    "id": 7,
-    "text": "Think less, do more.",
-    "author": "Me",
-    "category": "family"
-  },
-  {
     "id": 8,
     "text": "Random quote from a friend",
-    "author": "Friend #1",
+    "author": "Nathan",
     "category": "friends"
   },
   {
     "id": 9,
     "text": "Another random quote from a friend",
-    "author": "Friend #2",
+    "author": "Leon",
     "category": "friends"
   },
   {
     "id": 10,
+    "text": "Another random quote from a friend",
+    "author": "Martin",
+    "category": "friends"
+  },
+  {
+    "id": 11,
     "text": "Random anonymous quote",
     "author": "Anonymous",
     "category": "anonymous"
   },
   {
-    "id": 11,
+    "id": 12,
     "text": "Inspirational quote from a luminary",
     "author": "Influential Person",
     "category": "luminaries"
