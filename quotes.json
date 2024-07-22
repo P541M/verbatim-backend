@@ -94,5 +94,11 @@
     "text": "Be happy.",
     "author": "Anonymous",
     "category": ["anonymous", "family"]
+  },
+  {
+    "id": 12125,
+    "text": "Submitted quote example.",
+    "author": "User",
+    "category": ["submitted"]
   }
 ]
