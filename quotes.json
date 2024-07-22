@@ -3,90 +3,90 @@
     "id": 1,
     "text": "N/A",
     "author": "Dad",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 2,
     "text": "Enjoy the ride.",
     "author": "Mom",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 3,
     "text": "Life is a journey, not a destination.",
     "author": "Brother #1",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 4,
     "text": "N/A",
     "author": "Brother #2",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 5,
     "text": "Life is full of uncertainty, don't dwell too hard on one thing.",
     "author": "Brother #3",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 6,
     "text": "Keep your loved ones close.",
     "author": "Brother #4",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 1212,
     "text": "N/A",
     "author": "Auntie #1",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 4123126,
     "text": "N/A",
     "author": "Auntie #2",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 251236,
     "text": "N/A",
     "author": "Uncle",
-    "category": "family"
+    "category": ["family"]
   },
   {
     "id": 7,
     "text": "Random quote from a friend",
     "author": "Nathan",
-    "category": "friends"
+    "category": ["friends"]
   },
   {
     "id": 8,
     "text": "Another random quote from a friend",
     "author": "Leon",
-    "category": "friends"
+    "category": ["friends"]
   },
   {
     "id": 9,
     "text": "Another random quote from a friend",
     "author": "Martin",
-    "category": "friends"
+    "category": ["friends"]
   },
   {
     "id": 10,
     "text": "Don't cheat yourself.",
     "author": "Anonymous",
-    "category": "anonymous"
+    "category": ["anonymous", "luminaries"]
   },
   {
     "id": 11,
     "text": "To all of you out there, please keep your dreams alive.",
     "author": "Ke Huy Quan",
-    "category": "luminaries"
+    "category": ["luminaries"]
   },
   {
     "id": 12,
     "text": "Never back down, never what?",
     "author": "Nick Eh 30",
-    "category": "luminaries"
+    "category": ["luminaries"]
   }
 ]

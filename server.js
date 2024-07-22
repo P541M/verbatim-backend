@@ -22,7 +22,7 @@ const quoteSchema = new mongoose.Schema({
   id: Number,
   text: String,
   author: String,
-  category: String, // Updated to reflect the new categories
+  category: [String], // Updated to reflect multiple categories
   likes: { type: Number, default: 0 },
   likedBy: [String], // Store device IDs that have liked the quote
 });
