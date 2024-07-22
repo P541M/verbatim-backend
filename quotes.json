@@ -13,7 +13,7 @@
   },
   {
     "id": 3,
-    "text": "N/A",
+    "text": "Life is a journey, not a destination.",
     "author": "Brother #1",
     "category": "family"
   },
@@ -36,33 +36,39 @@
     "category": "family"
   },
   {
-    "id": 8,
+    "id": 7,
     "text": "Random quote from a friend",
     "author": "Nathan",
     "category": "friends"
   },
   {
-    "id": 9,
+    "id": 8,
     "text": "Another random quote from a friend",
     "author": "Leon",
     "category": "friends"
   },
   {
-    "id": 10,
+    "id": 9,
     "text": "Another random quote from a friend",
     "author": "Martin",
     "category": "friends"
   },
   {
-    "id": 11,
-    "text": "Random anonymous quote",
+    "id": 10,
+    "text": "Don't cheat yourself.",
     "author": "Anonymous",
     "category": "anonymous"
   },
   {
+    "id": 11,
+    "text": "To all of you out there, please keep your dreams alive.",
+    "author": "Ke Huy Quan",
+    "category": "luminaries"
+  },
+  {
     "id": 12,
-    "text": "Inspirational quote from a luminary",
-    "author": "Influential Person",
+    "text": "Never back down, never what?",
+    "author": "Nick Eh 30",
     "category": "luminaries"
   }
 ]
