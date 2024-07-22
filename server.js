@@ -10,7 +10,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 mongoose
-  .connect("mongodb://localhost:27017/quoteApp")
+  .connect("mongodb://localhost:27017/quoteApp", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -22,9 +25,9 @@ const quoteSchema = new mongoose.Schema({
   id: Number,
   text: String,
   author: String,
-  category: [String], // Updated to reflect multiple categories
+  category: [String],
   likes: { type: Number, default: 0 },
-  likedBy: [String], // Store device IDs that have liked the quote
+  likedBy: [String],
 });
 
 const Quote = mongoose.model("Quote", quoteSchema);

@@ -1,17 +1,21 @@
 const mongoose = require("mongoose");
-const Quote = require("./server");
+const Quote = require("./server"); // Adjust the path as necessary
 const quotes = require("./quotes.json"); // Import quotes from JSON file
 
 mongoose
-  .connect("mongodb://localhost:27017/quoteApp")
+  .connect("mongodb://localhost:27017/quoteApp", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(async () => {
     console.log("Connected to MongoDB for seeding");
 
-    await Quote.deleteMany({}); // Clear existing quotes
-
     for (const quote of quotes) {
-      const newQuote = new Quote(quote);
-      await newQuote.save();
+      await Quote.findOneAndUpdate(
+        { id: quote.id },
+        { $set: quote },
+        { upsert: true, new: true }
+      );
     }
 
     console.log("Database seeded");
