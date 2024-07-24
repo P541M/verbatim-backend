@@ -36,69 +36,93 @@
     "category": ["family"]
   },
   {
-    "id": 1212,
-    "text": "N/A",
-    "author": "Auntie #1",
-    "category": ["family"]
-  },
-  {
-    "id": 4123126,
-    "text": "N/A",
-    "author": "Auntie #2",
-    "category": ["family"]
-  },
-  {
-    "id": 251236,
-    "text": "N/A",
-    "author": "Uncle",
-    "category": ["family"]
-  },
-  {
     "id": 7,
-    "text": "Random quote from a friend",
-    "author": "Nathan",
-    "category": ["friends"]
-  },
-  {
-    "id": 8,
-    "text": "Another random quote from a friend",
-    "author": "Leon",
-    "category": ["friends"]
-  },
-  {
-    "id": 9,
-    "text": "Another random quote from a friend",
-    "author": "Martin",
-    "category": ["friends"]
-  },
-  {
-    "id": 10,
     "text": "Don't cheat yourself.",
     "author": "Anonymous",
     "category": ["anonymous", "luminaries"]
   },
   {
-    "id": 11,
+    "id": 8,
     "text": "To all of you out there, please keep your dreams alive.",
     "author": "Ke Huy Quan",
     "category": ["luminaries"]
   },
   {
-    "id": 12,
+    "id": 9,
     "text": "Never back down, never what?",
     "author": "Nick Eh 30",
-    "category": ["luminaries"]
+    "category": ["luminaries", "comedy"]
   },
   {
-    "id": 12124,
+    "id": 10,
     "text": "Be happy.",
     "author": "Anonymous",
     "category": ["anonymous", "family"]
   },
   {
-    "id": 12125,
-    "text": "Submitted quote example.",
-    "author": "User",
-    "category": ["submitted"]
+    "id": 11,
+    "text": "I dreamed of using my debit accidentally instead of credit, worse fear of my life.",
+    "author": "Leon",
+    "category": ["comedy", "friends"]
+  },
+  {
+    "id": 12,
+    "text": "who's abe Lincoln",
+    "author": "Martin",
+    "category": ["comedy", "friends"]
+  },
+  {
+    "id": 13,
+    "text": "At the end of the day, water is ice and ice is water",
+    "author": "Martin",
+    "category": ["comedy", "friends"]
+  },
+  {
+    "id": 15,
+    "text": "People say nothing is impossible, but I do nothing every day.",
+    "author": "A.A. Milne (Winnie the Pooh)",
+    "category": ["luminaries"]
+  },
+  {
+    "id": 16,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": ["luminaries"]
+  },
+  {
+    "id": 17,
+    "text": "What's 9 plus 10?",
+    "author": "N/A",
+    "category": ["comedy"]
+  },
+  {
+    "id": 18,
+    "text": "21",
+    "author": "Habeeb Cisse",
+    "category": ["comedy"]
+  },
+  {
+    "id": 19,
+    "text": "But we just friends tho",
+    "author": "Tyla",
+    "category": ["luminaries", "comedy"]
+  },
+  {
+    "id": 20,
+    "text": "Bro this dude groaning so loud",
+    "author": "Dylan",
+    "category": ["friends", "comedy"]
+  },
+  {
+    "id": 20,
+    "text": "If I don't care, they can't care",
+    "author": "Scott",
+    "category": ["friends", "comedy"]
+  },
+  {
+    "id": 20,
+    "text": "I am the first submitted quote.",
+    "author": "Anonymous",
+    "category": ["anonymous", "friends", "submitted"]
   }
 ]
