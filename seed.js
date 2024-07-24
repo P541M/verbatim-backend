@@ -3,7 +3,7 @@ const Quote = require("./server"); // Adjust the path as necessary
 const quotes = require("./quotes.json"); // Import quotes from JSON file
 
 mongoose
-  .connect("mongodb://localhost:27017/quoteApp", {
+  .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
