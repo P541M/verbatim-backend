@@ -21,6 +21,11 @@ const quoteSchema = new mongoose.Schema({
 
 const Quote = mongoose.model("Quote", quoteSchema);
 
+// Root route to prevent "Cannot GET /" error
+app.get("/", (req, res) => {
+  res.send("Welcome to the Quotes API!");
+});
+
 app.get("/quotes", async (req, res) => {
   try {
     const quotes = await Quote.find();
