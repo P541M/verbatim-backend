@@ -86,10 +86,7 @@ app.post("/quotes/:id/unlike", async (req, res) => {
 });
 
 mongoose
-  .connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(PORT, () => {
@@ -100,4 +97,4 @@ mongoose
     console.error("Could not connect to MongoDB", err);
   });
 
-module.exports = app;
+module.exports = { Quote };

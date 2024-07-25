@@ -1,5 +1,6 @@
+require("dotenv").config();
 const mongoose = require("mongoose");
-const { Quote } = require("./server"); // Adjust the path as necessary
+const { Quote } = require("./server");
 const quotes = require("./quotes.json");
 
 mongoose
