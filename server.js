@@ -1,15 +1,20 @@
+// Load environment variables from .env file
 require("dotenv").config();
+// Import necessary modules
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
+// Initialize express app
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Middleware to enable Cross-Origin Resource Sharing (CORS) and parse JSON bodies
 app.use(cors());
 app.use(bodyParser.json());
 
+// Define the schema for a quote
 const quoteSchema = new mongoose.Schema({
   id: Number,
   text: String,
@@ -19,6 +24,7 @@ const quoteSchema = new mongoose.Schema({
   likedBy: [String],
 });
 
+// Create a model from the schema
 const Quote = mongoose.model("Quote", quoteSchema);
 
 // Root route to prevent "Cannot GET /" error
@@ -26,6 +32,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to the Quotes API!");
 });
 
+// Endpoint to get all quotes
 app.get("/quotes", async (req, res) => {
   try {
     const quotes = await Quote.find();
@@ -35,6 +42,7 @@ app.get("/quotes", async (req, res) => {
   }
 });
 
+// Endpoint to like a quote
 app.post("/quotes/:id/like", async (req, res) => {
   const { id } = req.params;
   const { deviceId } = req.body;
@@ -61,6 +69,7 @@ app.post("/quotes/:id/like", async (req, res) => {
   }
 });
 
+// Endpoint to unlike a quote
 app.post("/quotes/:id/unlike", async (req, res) => {
   const { id } = req.params;
   const { deviceId } = req.body;
@@ -87,6 +96,7 @@ app.post("/quotes/:id/unlike", async (req, res) => {
   }
 });
 
+// Connect to MongoDB and start the server
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -102,4 +112,5 @@ mongoose
     console.error("Could not connect to MongoDB", err);
   });
 
+// Export the app for external usage
 module.exports = app;
