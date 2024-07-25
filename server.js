@@ -21,7 +21,6 @@ const quoteSchema = new mongoose.Schema({
 
 const Quote = mongoose.model("Quote", quoteSchema);
 
-// Endpoint to get all quotes
 app.get("/quotes", async (req, res) => {
   try {
     const quotes = await Quote.find();
@@ -31,7 +30,6 @@ app.get("/quotes", async (req, res) => {
   }
 });
 
-// Endpoint to like a quote
 app.post("/quotes/:id/like", async (req, res) => {
   const { id } = req.params;
   const { deviceId } = req.body;
@@ -58,7 +56,6 @@ app.post("/quotes/:id/like", async (req, res) => {
   }
 });
 
-// Endpoint to unlike a quote
 app.post("/quotes/:id/unlike", async (req, res) => {
   const { id } = req.params;
   const { deviceId } = req.body;
@@ -86,7 +83,10 @@ app.post("/quotes/:id/unlike", async (req, res) => {
 });
 
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("Connected to MongoDB");
     app.listen(PORT, () => {
@@ -97,4 +97,4 @@ mongoose
     console.error("Could not connect to MongoDB", err);
   });
 
-module.exports = { Quote };
+module.exports = app;
